@@ -96,3 +96,17 @@ body
     background-color: rgb(247, 241, 241);
     color: black;
 }
+
+.contant
+{
+    height: 200px;
+    width: 700px;
+    background-color: black;
+    color: whitesmoke;
+
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
