@@ -14,12 +14,12 @@ body
     position: relative;
 
   }
-.container
+/*.container
 {
     position: absolute;
     margin: 0px;
     width: auto;
-}
+}*/
 
 .topnav
 {
@@ -29,6 +29,27 @@ body
     
 }
 
+.topnav ul
+{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav li
+{
+    display: inline;
+    float: left;
+}
+
+.topnav li a
+{
+    display: block;
+    padding: 15px;
+    background-color: black;
+}
+
 .topnav a
 {
     float: left;
@@ -36,12 +57,9 @@ body
     text-align: center;
     padding: 14px  16px ;
     text-decoration:  none;
-    font-size: 17 px;
+    font-size: 20px;
     padding-right: 2px;
-    background-color: black;
-    
-    
-
+    background-color: black;   
 }
 
 
@@ -55,8 +73,8 @@ body
 {
     
     list-style-type: none;
-    margin: 35px;
-    padding: 10px;
+    margin: 0px;
+    padding: 30px;
     width: 300px;
     font-size: 20;
     text-align: left;
