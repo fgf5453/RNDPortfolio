@@ -55,19 +55,18 @@ body
     float: left;
     color:rgb(245, 244, 244);
     text-align: center;
-    padding: 14px  16px ;
-    text-decoration:  none;
+    text-decoration: none;
     font-size: 20px;
-    padding-right: 2px;
     background-color: black;   
 }
 
 
 .topnav a:hover
 {
-    background-color: rgb(247, 241, 241);
+    background-color:  rgb(247, 241, 241);;
     color: black;
 }
+
 
 .sidenav ul
 {
@@ -76,17 +75,18 @@ body
     margin: 0px;
     padding: 30px;
     width: 300px;
+    height: 600px;
     font-size: 20;
     text-align: left;
-    
-    
+    background-color: black;
 }
 .sidenav li a 
 {
     display: block;
-    color:  #000;
+    color: whitesmoke;
     padding: 20px 16px;
     text-decoration: none;
+    
 
 }
 
