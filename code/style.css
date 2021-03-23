@@ -110,3 +110,13 @@ body
     margin-top: -100px;
     margin-left: -200px;
 }
+
+.contant h2 
+{
+    margin-left: 5px;
+}
+
+.contant p 
+{
+    margin-left: 20px;
+}
