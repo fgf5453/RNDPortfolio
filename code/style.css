@@ -1,6 +1,7 @@
 html
 {
     height: 100%;
+    
 }
 body
   {
@@ -99,10 +100,11 @@ body
 
 .contant
 {
-    height: 200px;
-    width: 700px;
+    height: 2000px;
+    width: 800px;
     background-color: black;
     color: whitesmoke;
+    opacity: 0.7;
 
     position: fixed;
     top: 30%;
@@ -120,3 +122,24 @@ body
 {
     margin-left: 20px;
 }
+
+.contant h4
+{
+    margin-left: 20px;
+    
+}
+.meetings
+{
+    border-style: groove;
+    border-color: azure;
+    margin: 5px;
+}
+
+.meetings li 
+{
+    list-style: none;
+    margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px 3px;
+}
+
