@@ -5,8 +5,12 @@ http://www.w3.org/TR/html4/">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--include style.css file-->
     <link rel="stylesheet" href="style.css">
-    
+    <!--include tab.js-- file>-->
+    <script> src= "tab.js" </script>
+    <!--include contant.css-->
+    <link rel="stylesheet" href="content.css">
     <title>Teamwork and communication</title>
 </head>
 <body>
@@ -36,18 +40,66 @@ http://www.w3.org/TR/html4/">
       </div> 
     <!--end of the nav bars-->
 
-    <!--Communication contant-->
+    <!--Communication contant tabs-->
+<div class="contant">
+    <div class="tab1">
 
-    <div class="contant">
-      <h2>Meetings</h2>
-      <h2>Teamwork Skills</h2>
-      <h2>Communication Patterns</h2>
-      <h2>Team Norms</h2>
-      <h2>Client feedback</h2>
-      <h2>Communication Strategy</h2>
-      <h2>Client Involvments</h2>
-      <h2>Stakeholders Documentation</h2>
+      <button class="tablinks" onclick="openInput(event, 'Meetings')" id="defaultOpen">Meetings</button>
+      <button class="tablinks" onclick="openInput(event, 'TeamWork Skills')">TeamWork Skills</button>
+      <button class="tablinks" onclick="openInput(event, 'Communication Patterns')">Communication Patterns</button>
+      <!--<button class="tablinks" onclick="openInput(event, 'Team Norms')" id="defaultOpen">Team Norms</button>
+      <button class="tablinks" onclick="openInput(event, 'Client Feedback')" id="defaultOpen">Client Feedback</button>
+      <button class="tablinks" onclick="openInput(event, 'Communication Strategy')" id="defaultOpen">Communication Strategy</button>
+      <button class="tablinks" onclick="openInput(event, 'Client Involvments')" id="defaultOpen">Client Involvments</button>
+      <button class="tablinks" onclick="openInput(event, 'Stakeholders Documentation')" id="defaultOpen">Stakeholder Documentation</button>-->
+
     </div>
+
+    <div id= "Meetings" class="tabcontant">
+      <h3>Meetings</h3>
+       <p>sdl;fj;asfj;sdfj;aosidfjaidfj;aoisfj;soijf;oaisejdf;oaijf;aoiesjfd;aosifja;oisjfa;foseidja;foi</p>
+    </div>
+
+    <div id= "TeamWork Skills" class="tabcontant">
+      <h3>TeamWork Skills</h3>
+      <!-- <p> </p>-->
+    </div>
+
+    <div id= "Communication Patterns" class="tabcontant">
+        <h3>Communication Patterns</h3>
+        <!-- <p> </p>-->
+    </div>
+<!--
+<div id= "Team Norms" class="tabcontant">
+          <h3>Team Norms</h3>
+         
+        </div>
+    
+
+        <div id= "Team Norms" class="tabcontant">
+                <h3>Team Norms</h3>
+                
+        </div>
+          
+        <div id= "Client Feedback" class="tabcontant">
+            <h3>Client Feedback</h3>
+           
+        </div>
+          
+        <div id= "Communication Strategy" class="tabcontant">
+            <h3>Communication Strategy</h3>
+            
+        </div>
+          
+        <div id= "Stakeholders Documentation" class="tabcontant">
+            <h3>Stakeholders Documentation</h3>
+            
+        </div>
+
+-->
+   
+
+</div>
     
 </body>
 </html>
