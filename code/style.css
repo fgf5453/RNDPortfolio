@@ -1,27 +1,10 @@
-html
-{
-    height: 100%;
-    
-}
 body
   {
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    background-image: url("/imgs/indexBackground.jpg");
-    min-height: 100px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150%   ;
-    position: relative;
+    background-color: darkseagreen;
     overflow: scroll;/*show scrollbars*/
 
   }
-/*.container
-{
-    position: absolute;
-    margin: 0px;
-    width: auto;
-}*/
 
 .topnav
 {
@@ -50,6 +33,7 @@ body
     display: block;
     padding: 15px;
     background-color: black;
+    
 }
 
 .topnav a
@@ -98,50 +82,3 @@ body
     background-color: rgb(247, 241, 241);
     color: black;
 }
-
-.contant
-{
-    height: 2000px;
-    width: 800px;
-    background-color: black;
-    color: whitesmoke;
-    opacity: 0.7;
-
-    position: fixed;
-    top: 30%;
-    left: 40%;
-    margin-top: -100px;
-    margin-left: -200px;
-}
-
-.contant h2 
-{
-    margin-left: 5px;
-}
-
-.contant p 
-{
-    margin-left: 20px;
-}
-
-.contant h4
-{
-    margin-left: 20px;
-    
-}
-.meetings
-{
-    border-style: groove;
-    border-color: azure;
-    margin: 5px;
-}
-
-.meetings li 
-{
-    list-style: none;
-    margin-left: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 5;
-    padding: 5px 3px;
-}
-
