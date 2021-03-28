@@ -9,9 +9,9 @@ http://www.w3.org/TR/html4/">
     <link rel="stylesheet" href="style.css">
     <!--include tab.js-- file>-->
     <script> src= "tab.js" </script>
-    <!--include contant.css-->
     <link rel="stylesheet" href="content.css">
     <title>Teamwork and communication</title>
+
 </head>
 <body>
 
@@ -40,65 +40,56 @@ http://www.w3.org/TR/html4/">
       </div> 
     <!--end of the nav bars-->
 
-    <!--Communication contant tabs-->
-<div class="contant">
-    <div class="tab1">
-
-      <button class="tablinks" onclick="openInput(event, 'Meetings')" id="defaultOpen">Meetings</button>
-      <button class="tablinks" onclick="openInput(event, 'TeamWork Skills')">TeamWork Skills</button>
-      <button class="tablinks" onclick="openInput(event, 'Communication Patterns')">Communication Patterns</button>
-      <!--<button class="tablinks" onclick="openInput(event, 'Team Norms')" id="defaultOpen">Team Norms</button>
-      <button class="tablinks" onclick="openInput(event, 'Client Feedback')" id="defaultOpen">Client Feedback</button>
-      <button class="tablinks" onclick="openInput(event, 'Communication Strategy')" id="defaultOpen">Communication Strategy</button>
-      <button class="tablinks" onclick="openInput(event, 'Client Involvments')" id="defaultOpen">Client Involvments</button>
-      <button class="tablinks" onclick="openInput(event, 'Stakeholders Documentation')" id="defaultOpen">Stakeholder Documentation</button>-->
-
-    </div>
-
-    <div id= "Meetings" class="tabcontant">
-      <h3>Meetings</h3>
-       <p>sdl;fj;asfj;sdfj;aosidfjaidfj;aoisfj;soijf;oaisejdf;oaijf;aoiesjfd;aosifja;oisjfa;foseidja;foi</p>
-    </div>
-
-    <div id= "TeamWork Skills" class="tabcontant">
-      <h3>TeamWork Skills</h3>
-      <!-- <p> </p>-->
-    </div>
-
-    <div id= "Communication Patterns" class="tabcontant">
-        <h3>Communication Patterns</h3>
-        <!-- <p> </p>-->
-    </div>
-<!--
-<div id= "Team Norms" class="tabcontant">
-          <h3>Team Norms</h3>
-         
-        </div>
-    
-
-        <div id= "Team Norms" class="tabcontant">
-                <h3>Team Norms</h3>
-                
-        </div>
-          
-        <div id= "Client Feedback" class="tabcontant">
-            <h3>Client Feedback</h3>
-           
-        </div>
-          
-        <div id= "Communication Strategy" class="tabcontant">
-            <h3>Communication Strategy</h3>
-            
-        </div>
-          
-        <div id= "Stakeholders Documentation" class="tabcontant">
-            <h3>Stakeholders Documentation</h3>
-            
-        </div>
-
--->
-   
-
+   <div class="contant">
+      
+      <h2>Team and communication</h2>
+      <p>Click on the buttons inside the tabbed menu:</p>
+      
+      <div class="tab">
+        <button class="tablinks" onclick="opentab(event, 'Meetings')">Meetings</button>
+        <button class="tablinks" onclick="opentab(event, 'TeamWork Skills')">TeamWork Skills</button>
+        <button class="tablinks" onclick="opentab(event, 'Communication')">Communication Patterns</button>
+        <button class="tablinks" onclick="opentab(event, 'Stakeholders Documentation')">Stakeholders Documentation</button>
+      </div>
+      
+      <div id="Meetings" class="tabcontent">
+        <h3>Meetings</h3>
+         <p> <a href= "meetings\Weekly Working hours.xlsx" download>Semester one</a> </p>
+         <p><a href="" download >Semster two</a></p>
+         <p><a href="" download>Summer School</a></p>
+      </div>
+      
+      <div id="TeamWork Skills" class="tabcontent">
+        <h3>TeamWork Skills</h3>
+        <p><a href="" download>Team skill registor</a></p> 
+        <p><a href="" download>Team skills matrix</a></p>
+        <p><a href="" download>Upskilling plan</a></p>
+      </div>
+      
+      <div id="Communication" class="tabcontent">
+        <h3>communication</h3>
+        <p><a href="" download> Communication Patterns</a></p>
+        <p> <a href="" download >Team Norms</a></p>
+        <p><a href=""download>client feedback</a></p>
+        <p><a href="" download>communication Strategy</a></p>
+      </div>
+ 
+      <script>
+      function opentab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+      </div>
 </div>
     
 </body>
