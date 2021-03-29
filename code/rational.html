@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+     <!--include style.css file-->
+     <link rel="stylesheet" href="style.css">
+     <!--include tab.js-- file>-->
+     <script> src= "tab.js" </script>
+     <link rel="stylesheet" href="content.css">
 
     <title>Rationale for decisions</title>
     
@@ -26,7 +30,7 @@
           <li> <a href="planning.html"> project planning</a></li>
          <li><a href="rational.html">Rationale for decisions</a> </li> 
           <li><a href="communication.html">Teamwork and communication</a></li>
-          <li><a href="communication.html">Research and development activities and outputs</a></li>
+          <li><a href="development.html">Research and development activities and outputs</a></li>
           <li><a href="quality.html">Quality assurance activities and outcomes</a> </li>
           <li><a href="product.html"> product</a></li>
   
@@ -34,5 +38,64 @@
       </div>
       </div> 
     <!--end of the nav bars-->
+
+ <div class="contant">
+      
+      <h2>Project Rational</h2>
+      <p>Click on the buttons inside the tabbed menu:</p>
+      
+      <div class="tab">
+        <button class="tablinks" onclick="opentab(event, 'Project vision')">Project vision</button>
+        <button class="tablinks" onclick="opentab(event, 'Logs')">Logs</button>
+        <button class="tablinks" onclick="opentab(event, 'Scoop Statments versions')">Scoop Statments versions</button>
+        <button class="tablinks" onclick="opentab(event, 'Costs')">Costs</button>
+
+      </div>
+
+      <div id="Project vision" class="tabcontent">
+        <h3>Project Logs</h3>
+        <p><a href="" download>Vision</a></p> 
+      </div>
+      
+      <div id="Logs" class="tabcontent">
+        <h3>Risk Rejestor</h3>
+        <p><a href="" download>Risk Rejestor</a></p> 
+        <p><a href="" download>Issue Rejestor</a></p>
+        
+      </div>
+
+      <div id="Scoop Statments versions" class="tabcontent">
+        <h3>Scoop Statments versions</h3>
+        <p><a href="" download>Scoop statments</a></p>
+        <p><a href="" download>Change Forms</a></p>
+
+
+      </div>
+      
+      <div id="Costs" class="tabcontent">
+        <h3>Costs</h3>
+        <p><a href="" download>Costs Reports</a></p>
+        <p><a href=""download>Change forms</a></p>
+       
+      </div>
+ 
+    <!--This is to activate the tabs in the contant-->
+      <script>
+      function opentab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+      </div>
+</div>
 </body>
 </html>

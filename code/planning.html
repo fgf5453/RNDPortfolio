@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+     <!--include style.css file-->
+     <link rel="stylesheet" href="style.css">
+     <!--include tab.js-- file>-->
+     <script> src= "tab.js" </script>
+     <link rel="stylesheet" href="content.css">
     <title>project planning </title>
 </head>
 <body>
@@ -24,7 +28,7 @@
           <li> <a href="planning.html"> project planning</a></li>
          <li><a href="rational.html">Rationale for decisions</a> </li> 
           <li><a href="communication.html">Teamwork and communication</a></li>
-          <li><a href="communication.html">Research and development activities and outputs</a></li>
+          <li><a href="development.html">Research and development activities and outputs</a></li>
           <li><a href="quality.html">Quality assurance activities and outcomes</a> </li>
           <li><a href="product.html"> product</a></li>
   
@@ -32,5 +36,54 @@
       </div>
       </div> 
     <!--end of the nav bars-->
+    <div class="contant">
+      
+      <h2>Project planning</h2>
+      <p>Click on the buttons inside the tabbed menu:</p>
+      
+      <div class="tab">
+        <button class="tablinks" onclick="opentab(event, 'Project Proposal')">Project Proposal</button>
+        <button class="tablinks" onclick="opentab(event, 'Project Planning')">Project Planning</button>
+        <button class="tablinks" onclick="opentab(event, 'Milestone Report')">Milestone Report</button>
+      </div>
+      
+      <div id="Project Proposal" class="tabcontent">
+        <h3>Proposal</h3>
+         <p> <a href= ""download>Final Proposal</a> </p>
+         <p><a href="" download >Proposal Versions</a></p>
+      </div>
+      
+      <div id="Project Planning" class="tabcontent">
+        <h3>Project Planning </h3>
+        <p><a href="" download>Project Schedule</a></p> 
+        <p><a href="" download>Recource Plan</a></p>
+        <p><a href="" download>planning Change forms</a></p>
+      </div>
+      
+      <div id="Milestone Report" class="tabcontent">
+        <h3>Project Milstone</h3>
+        <p><a href="" download>Milestone report</a></p>
+        <p><a href=""download>Milestone Versions</a></p>
+       
+      </div>
+ 
+    <!--This is to activate the tabs in the contant-->
+      <script>
+      function opentab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+      </div>
+</div>
 </body>
 </html>
