@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--include style.css file-->
     <link rel="stylesheet" href="style.css">
+    <!--include tab.js-- file>-->
+    <script> src= "tab.js" </script>
+    <link rel="stylesheet" href="content.css">
     <title>Quality assurance activities and outcomes</title>
 </head>
 <body>
@@ -32,5 +36,47 @@
       </div>
       </div> 
     <!--end of the nav bars-->
+
+    
+    <div class="contant">
+      
+      <h2>Quality Assurance Activities And OutComes</h2>
+      <p>Click on the buttons inside the tabbed menu:</p>
+      
+      <div class="tab">
+        <button class="tablinks" onclick="opentab(event, 'Quality Assurance plans')">Quality Assurance plan</button>
+        <button class="tablinks" onclick="opentab(event, 'Quality Assurance Activities')">Quality Assurance Activities</button>
+      </div>
+      
+      <div id="Quality Assurance plans" class="tabcontent">
+        <h3>Quality Assurance plans</h3>
+         <p> <a href= "Doc/Quality/Definition of Done Manifesto.xlsx" download>Definition of Done Manifesto </a> </p>
+         <p><a href="Doc/Quality/Quality Assurance plan.docx" download >Quality Assurance Plan</a></p>
+         <p><a href="Doc/Quality/Quality Assurances.docx"download>Quality Assurances practices </a></p>
+      </div>
+      
+      <div id="Quality Assurance Activities" class="tabcontent">
+        <h3>Quality Assurance Activities</h3>
+        <p><a href="" download>Quality Review Meetings</a></p> 
+        <p><a href=""download>Retrospectives</a></p>
+      </div>
+       <!--This is to activate the tabs in the contant-->
+      <script>
+      function opentab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+      </div>
+</div>
 </body>
 </html>
